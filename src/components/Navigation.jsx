@@ -5,7 +5,7 @@ function Navigation() {
     console.log(currentPage)
 
     return (
-        <ul className="nav nav-tabs">
+        <ul className="nav nav-pills">
             <li className="nav-item">
                 <Link
                     to="/AboutMe"
