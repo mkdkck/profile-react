@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="flex-column justify-flex-start min-100-vh">
+    <div className="d-flex flex-column justify-content-start min-vh-100">
       <Header />
       <main className="container">
         <Outlet />
