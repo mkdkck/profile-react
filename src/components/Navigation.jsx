@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Navigation() {
     const currentPage = useLocation().pathname;
+    console.log(currentPage)
 
     return (
         <ul className="nav nav-tabs">
