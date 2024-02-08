@@ -24,7 +24,7 @@ Open the directory from VS Code.
 
 2. run $npm install to install packages.
 
-3. run the server $npm run start.
+3. run the app $npm run start.
 
 4. use localhost:3000 as the URL to run the app.
 

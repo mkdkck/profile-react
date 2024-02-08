@@ -1,4 +1,4 @@
-export default function ProjectCards({ projects: { projectTitle, imageLink, mainTech, github, deployment } }) {
+export default function ProjectCards({ projects: { projectTitle, mainTech, github, deployment }, imageLink }) {
     return (
         <div className="col-lg-5 m-4 p-2 card ">
             <img src={imageLink} className="card-img" alt={projectTitle} style={{
