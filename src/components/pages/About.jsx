@@ -1,7 +1,15 @@
 import Avatar from '@mui/material/Avatar';
 
 import img from '../../../src/assets/img/Colin-photo.jpg'
+import { useEffect } from "react";
+
 export default function About() {
+    useEffect(() => {
+        if (window.location.pathname !== '/AboutMe') {
+            window.location.href = '/AboutMe'
+        }
+    }, []);
+
     return (
         <div>
             <h1>About Me</h1>
