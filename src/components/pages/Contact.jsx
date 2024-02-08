@@ -57,18 +57,18 @@ export default function Contact() {
 
 
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className="container col-lg-8">
+            <h1 className='text-center'>Contact</h1>
 
             <form id="contact" className="mt-3" onSubmit={handleFormSubmit}>
                 <div className="mb-3">
-                    <label className="form-label">Name</label>
+                    <label className="form-label text-start">Name</label>
                     <input className="form-control"
                         value={name}
                         name="name"
                         onChange={handleInputChange}
                         type="text"
-                        placeholder="your name" />
+                    />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Email</label>
@@ -78,7 +78,7 @@ export default function Contact() {
                         onChange={handleInputChange}
                         onBlur={checkEmail}
                         type="email"
-                        placeholder="contact email" />
+                    />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Content</label>
@@ -87,7 +87,7 @@ export default function Contact() {
                         name="content"
                         onChange={handleInputChange}
                         type="text"
-                        placeholder="type here"></textarea>
+                    ></textarea>
                 </div>
                 {errorMessage && (
                     <div>

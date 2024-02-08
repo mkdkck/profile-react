@@ -8,37 +8,37 @@
     },
     {
         "imageLink": "https://placehold.co/600x400",
-        "projectTitle": "Text Editor",
-        "mainTech": "TWA",
-        "github": "https://github.com/mkdkck/textEditor-PWA",
-        "deployment": "https://pwa-text-editor-jvnq.onrender.com"
+        "projectTitle": "Social Network API",
+        "mainTech": "MongoDB",
+        "github": "https://github.com/mkdkck/socialNetworkAPI-NoSQL",
+        "deployment": "https://drive.google.com/file/d/1xuG6A52y3TOszDtA5qUjH6PSzfGwD1en/view"
     },
     {
         "imageLink": "https://placehold.co/600x400",
-        "projectTitle": "Text Editor",
-        "mainTech": "TWA",
-        "github": "https://github.com/mkdkck/textEditor-PWA",
-        "deployment": "https://pwa-text-editor-jvnq.onrender.com"
+        "projectTitle": "Tech Blog",
+        "mainTech": "CMS-style",
+        "github": "https://github.com/mkdkck/TechBlog",
+        "deployment": "https://deploytechblog-bb43163550a8.herokuapp.com"
     },
     {
         "imageLink": "https://placehold.co/600x400",
-        "projectTitle": "Text Editor",
-        "mainTech": "TWA",
-        "github": "https://github.com/mkdkck/textEditor-PWA",
-        "deployment": "https://pwa-text-editor-jvnq.onrender.com"
+        "projectTitle": "E commerce database",
+        "mainTech": "ORM",
+        "github": "https://github.com/mkdkck/E-commerce-Back-End",
+        "deployment": "https://drive.google.com/file/d/1dCxQlXMavUHj8kTQiVVKUNpw8TyaJLJD/viewLinks"
     },
     {
         "imageLink": "https://placehold.co/600x400",
-        "projectTitle": "Text Editor",
-        "mainTech": "TWA",
-        "github": "https://github.com/mkdkck/textEditor-PWA",
-        "deployment": "https://pwa-text-editor-jvnq.onrender.com"
+        "projectTitle": "Employee tracker",
+        "mainTech": "MySQL",
+        "github": "https://github.com/mkdkck/Employee-Tracker",
+        "deployment": "https://drive.google.com/file/d/1TKoWlykdNd9uiIh9TAI6q_F43_nSwOLK/view"
     },
     {
         "imageLink": "https://placehold.co/600x400",
-        "projectTitle": "Text Editor",
-        "mainTech": "TWA",
-        "github": "https://github.com/mkdkck/textEditor-PWA",
-        "deployment": "https://pwa-text-editor-jvnq.onrender.com"
+        "projectTitle": "Note Taker",
+        "mainTech": "ExpressJS",
+        "github": "https://github.com/mkdkck/note-taker",
+        "deployment": "https://fierce-island-66535-578a77698127.herokuapp.com/"
     }
 ]
