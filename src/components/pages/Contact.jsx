@@ -15,26 +15,25 @@ export default function Contact() {
         if (inputType === "name") {
             setName(inputValue);
         } else if (inputType === "email") {
+            if (!validateEmail(email)) {
+                setErrorMessage("Email is invalid");
+            }
             setEmail(inputValue);
         } else {
             setContent(inputValue);
         }
     }
 
-    const checkEmptyInput = function (e) {
+    const checkEmail = function (e) {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
-        if (inputType === "name" && inputValue.trim() === '') {
-            setErrorMessage("Name field cannot be empty");
-        } else if (inputType === "email" && inputValue.trim() === '') {
-            setErrorMessage("Email field cannot be empty");
-        } else if (inputValue.trim() === '') {
-            setErrorMessage("Content field cannot be empty");
+        setEmail(inputValue);
+        if (inputType === "email" && !validateEmail(email)) {
+            setErrorMessage("Email is invalid");
+        } else {
+            setErrorMessage("");
         }
-        setTimeout(() => {
-            setErrorMessage('')
-        }, 1500);
     }
 
     const handleFormSubmit = function (e) {
@@ -58,19 +57,18 @@ export default function Contact() {
 
 
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className="container col-lg-8">
+            <h1 className='text-center'>Contact</h1>
 
             <form id="contact" className="mt-3" onSubmit={handleFormSubmit}>
                 <div className="mb-3">
-                    <label className="form-label">Name</label>
+                    <label className="form-label text-start">Name</label>
                     <input className="form-control"
                         value={name}
                         name="name"
                         onChange={handleInputChange}
-                        onBlur={checkEmptyInput}
                         type="text"
-                        placeholder="your name" />
+                    />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Email</label>
@@ -78,9 +76,9 @@ export default function Contact() {
                         value={email}
                         name="email"
                         onChange={handleInputChange}
-                        onBlur={checkEmptyInput}
+                        onBlur={checkEmail}
                         type="email"
-                        placeholder="contact email" />
+                    />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Content</label>
@@ -88,9 +86,8 @@ export default function Contact() {
                         value={content}
                         name="content"
                         onChange={handleInputChange}
-                        onBlur={checkEmptyInput}
                         type="text"
-                        placeholder="type here"></textarea>
+                    ></textarea>
                 </div>
                 {errorMessage && (
                     <div>
