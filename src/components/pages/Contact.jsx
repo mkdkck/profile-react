@@ -8,7 +8,7 @@ export default function Contact() {
             <form id="contact" className="mt-3">
                 <div className="mb-3">
                     <label className="form-label">Name</label>
-                    <input className="form-control" id="name" placeholder="Your name" />
+                    <input className="form-control" id="name" placeholder="your name" />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">email</label>
