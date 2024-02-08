@@ -15,26 +15,39 @@ export default function Contact() {
         if (inputType === "name") {
             setName(inputValue);
         } else if (inputType === "email") {
+            if (!validateEmail(email)) {
+                setErrorMessage("Email is invalid");
+            }
             setEmail(inputValue);
         } else {
             setContent(inputValue);
         }
     }
 
-    const checkEmptyInput = function (e) {
+    // const checkEmptyInput = function (e) {
+    //     const { target } = e;
+    //     const inputType = target.name;
+    //     const inputValue = target.value;
+    //     if (inputType === "name" && inputValue.trim() === '') {
+    //         setErrorMessage("Name field cannot be empty");
+    //     } else if (inputValue.trim() === '') {
+    //         setErrorMessage("Content field cannot be empty");
+    //     }
+    //     setTimeout(() => {
+    //         setErrorMessage('')
+    //     }, 1500);
+    // }
+
+    const checkEmail = function (e) {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
-        if (inputType === "name" && inputValue.trim() === '') {
-            setErrorMessage("Name field cannot be empty");
-        } else if (inputType === "email" && inputValue.trim() === '') {
-            setErrorMessage("Email field cannot be empty");
-        } else if (inputValue.trim() === '') {
-            setErrorMessage("Content field cannot be empty");
+        setEmail(inputValue);
+        if (inputType === "email" && !validateEmail(email)) {
+            setErrorMessage("Email is invalid");
+        } else {
+            setErrorMessage("");
         }
-        setTimeout(() => {
-            setErrorMessage('')
-        }, 1500);
     }
 
     const handleFormSubmit = function (e) {
@@ -68,7 +81,7 @@ export default function Contact() {
                         value={name}
                         name="name"
                         onChange={handleInputChange}
-                        onBlur={checkEmptyInput}
+                        // onBlur={checkEmptyInput}
                         type="text"
                         placeholder="your name" />
                 </div>
@@ -78,7 +91,7 @@ export default function Contact() {
                         value={email}
                         name="email"
                         onChange={handleInputChange}
-                        onBlur={checkEmptyInput}
+                        onBlur={checkEmail}
                         type="email"
                         placeholder="contact email" />
                 </div>
@@ -88,7 +101,7 @@ export default function Contact() {
                         value={content}
                         name="content"
                         onChange={handleInputChange}
-                        onBlur={checkEmptyInput}
+                        // onBlur={checkEmptyInput}
                         type="text"
                         placeholder="type here"></textarea>
                 </div>
