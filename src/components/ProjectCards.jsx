@@ -5,11 +5,11 @@ export default function ProjectCards({ projects: { projectTitle, imageLink, main
                 opacity: 0.2
             }} />
             <div className="card-img-overlay d-flex flex-column justify-content-between p-5 " >
-                <div className="m-4 ">
-                    <h3 className="card-title fs-2">{projectTitle}</h3>
+                <div className="m-3 ">
+                    <h3 className="card-title fs-3">{projectTitle}</h3>
                     <h5 className="card-title fs-5">--{mainTech}</h5>
                 </div>
-                <div className="d-flex flex-column align-items-end m-4">
+                <div className="d-flex flex-column align-items-end mb-3">
                     <a className="card-text ci ci-github ci-3x" href={github} />
                     <a className="card-text fs-5" href={deployment} >Deloyment</a>
                 </div>
