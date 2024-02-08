@@ -8,9 +8,9 @@ export default function Footer() {
             </div>
 
             <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                {/* <li className="ms-3"><a className="text-body-secondary" href="#"><svg className="bi" width="24" height="24"><use xlink:href="#twitter" /></svg></a></li>
-                <li className="ms-3"><a className="text-body-secondary" href="#"><svg className="bi" width="24" height="24"><use xlink:href="#instagram" /></svg></a></li>
-                <li className="ms-3"><a className="text-body-secondary" href="#"><svg className="bi" width="24" height="24"><use xlink:href="#facebook" /></svg></a></li> */}
+                <li className="ms-3"><a className="text-body-secondary ci ci-github ci-2x" href="https://github.com/mkdkck"></a></li>
+                <li className="ms-3"><a className="text-body-secondary ci ci-linkedin ci-2x" href="https://www.linkedin.com/in/jiabin-liu-38559776/"></a></li>
+                <li className="ms-3"><a className="text-body-secondary ci ci-facebook ci-2x" href="https://www.facebook.com/jiabin.liu.7/"></a></li>
             </ul>
         </footer>
     );
