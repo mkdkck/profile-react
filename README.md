@@ -30,25 +30,17 @@ Open the directory from VS Code.
 
 for online user:
 1. simply open this link to use:
-https://pwa-text-editor-jvnq.onrender.com
+https://65c503cab252ee36cbb91c95--calm-babka-22a32a.netlify.app/
 
 ## Usage
 
-1. typing in the main page, data stored in the localstorage, when lose focus, data on the page saves to the IndexDB
+1. open the link and see the pages about Colin`s profile
 
-<img src="./assets/img/main.png" alt="Homepage" width= 60%> <br/>
-<img src="./assets/img/indexedDB.png" alt="data saving to the indexedDB" width= 60%> <br/>
+<img src="./ReadMeImg/aboutMe.png" alt="aboutme" width= 60%> <br/>
+<img src="./ReadMeImg/ContactMe.png" alt="contactMe" width= 60%> <br/>
+<img src="./ReadMeImg/portfolio.png" alt="portfolio" width= 60%> <br/>
+<img src="./ReadMeImg/resume.png" alt="resume" width= 60%> <br/>
 
-2. using manifest and service worker on this app
-
-<img src="./assets/img/Manifest.png" alt="using Manifest" width= 60%> <br/>
-<img src="./assets/img/sw.png" alt="using service worker" width= 60%> <br/>
-<img src="./assets/img/installApp.png" alt="installing app" width= 60%> <br/>
-
-3. main data is cached, app can run without internet.
-
-<img src="./assets/img/cached.png" alt="cached data" width= 60%> <br/>
-<img src="./assets/img/localApp.png" alt="running locally" width= 60%> <br/>
 
 ## License
 

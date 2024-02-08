@@ -24,6 +24,20 @@ export default function Contact() {
         }
     }
 
+    const checkEmptyInput = function (e) {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+        if (inputType === "name" && inputValue.trim() === '') {
+            setErrorMessage("Name field cannot be empty");
+        } else if (inputValue.trim() === '') {
+            setErrorMessage("Content field cannot be empty");
+        }
+        setTimeout(() => {
+            setErrorMessage('')
+        }, 1500);
+    }
+
     const checkEmail = function (e) {
         const { target } = e;
         const inputType = target.name;
@@ -67,6 +81,7 @@ export default function Contact() {
                         value={name}
                         name="name"
                         onChange={handleInputChange}
+                        onBlur={checkEmptyInput}
                         type="text"
                     />
                 </div>
@@ -86,6 +101,7 @@ export default function Contact() {
                         value={content}
                         name="content"
                         onChange={handleInputChange}
+                        onBlur={checkEmptyInput}
                         type="text"
                     ></textarea>
                 </div>
