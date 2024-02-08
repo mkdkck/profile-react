@@ -1,5 +1,6 @@
 import PortfolioCard from '../ProjectCards'
 import Projects from '../utils/data.json'
+
 export default function Portfolio() {
     return (
         <>
