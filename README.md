@@ -48,16 +48,14 @@ N/A
 
 ## Contribution
 You can contribute to this application by revising the codes here: <br/>
-https://github.com/mkdkck/textEditor-PWA
-
+https://github.com/mkdkck/profile-react
 ## Test
 N/A
 
 ## FurtherQuestions
 
 please review the codes here： <br/>
-https://github.com/mkdkck/textEditor-PWA
-
+https://github.com/mkdkck/profile-react
 or contact the owner via: colin173@gmail.com
 
 
